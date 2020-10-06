@@ -12,6 +12,8 @@ namespace RegularExpressions
 
             validation.ValidateLastName();
 
+            validation.ValidateEmail();
+
 
 
         }

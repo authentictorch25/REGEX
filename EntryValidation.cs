@@ -53,5 +53,28 @@ namespace RegularExpressions
                 }
             }
         }
+        public void ValidateEmail()
+        {
+            {
+
+                string patternEmail = @"^[a-zA-Z0-9]+([+-_.][a-zA-Z0-9]+)*([@]{1}[a-zA-Z0-9]+)?([.][a-zA-Z]{3})+([.][a-zA-Z]{2})?$";
+                Regex regex = new Regex(patternEmail);
+
+                Console.WriteLine("Enter the email of user");
+                string email = Console.ReadLine();
+
+                if (regex.IsMatch(email))
+                {
+                    Console.WriteLine("The entry for email is valid");
+
+                }
+
+                else
+                {
+                    Console.WriteLine("Invalid entry for email");
+
+                }
+            }
+        }
     }
 }
