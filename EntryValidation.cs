@@ -102,5 +102,27 @@ namespace RegularExpressions
                 }
             }
         }
+
+        public void ValidatePassword()
+        {
+            
+            string patternPassword = @"^[A-Za-z\d@$!%*#?&]{8,}";
+            Regex regex = new Regex(patternPassword);
+           
+            Console.WriteLine("Enter the password");
+            string password = Console.ReadLine().ToString();
+           
+            if (regex.IsMatch(password))
+            {
+                Console.WriteLine("Average password");
+                
+            }
+           
+            else
+            {
+                Console.WriteLine("Invalid password");
+                
+            }
+        }
     }
 }

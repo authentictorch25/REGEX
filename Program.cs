@@ -16,6 +16,8 @@ namespace RegularExpressions
 
             validation.ValidatePhoneNumber();
 
+            validation.ValidatePassword();
+
 
 
         }
