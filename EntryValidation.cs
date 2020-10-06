@@ -30,5 +30,28 @@ namespace RegularExpressions
                 }
             }
         }
+        public void ValidateLastName()
+        {
+            {
+
+                string patternLastName = @"^[A-Z]{1}([a-zA-Z]+){2,}";
+                Regex regex = new Regex(patternLastName);
+
+                Console.WriteLine("Enter the first name of user");
+                string lastName = Console.ReadLine();
+
+                if (regex.IsMatch(lastName))
+                {
+                    Console.WriteLine("The entry for last name is valid");
+
+                }
+
+                else
+                {
+                    Console.WriteLine("Invalid entry. Enter atleast 3 characters and first letter should be capital");
+
+                }
+            }
+        }
     }
 }

@@ -10,6 +10,9 @@ namespace RegularExpressions
             EntryValidation validation = new EntryValidation();
             validation.ValidateFirstName();
 
+            validation.ValidateLastName();
+
+
 
         }
     }
