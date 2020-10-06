@@ -106,7 +106,7 @@ namespace RegularExpressions
         public void ValidatePassword()
         {
             
-            string patternPassword = @"^(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*#?&]{8,}";
+            string patternPassword = @"^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*#?&]{8,}$";
             Regex regex = new Regex(patternPassword);
            
             Console.WriteLine("Enter the password");
