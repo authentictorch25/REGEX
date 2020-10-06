@@ -76,5 +76,31 @@ namespace RegularExpressions
                 }
             }
         }
+
+        public void ValidatePhoneNumber()
+        {
+            {
+                {
+
+                    string patternPhoneNumber = @"^91[ ][6-9]{1}[0-9]{9}$";
+                    Regex regex = new Regex(patternPhoneNumber);
+
+                    Console.WriteLine("Enter the phone number of user");
+                    string phoneNumber = Console.ReadLine();
+
+                    if (regex.IsMatch(phoneNumber))
+                    {
+                        Console.WriteLine("The entry for phont number is valid");
+
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("Invalid entry for phone number ");
+
+                    }
+                }
+            }
+        }
     }
 }

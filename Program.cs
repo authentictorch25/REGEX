@@ -14,6 +14,8 @@ namespace RegularExpressions
 
             validation.ValidateEmail();
 
+            validation.ValidatePhoneNumber();
+
 
 
         }
