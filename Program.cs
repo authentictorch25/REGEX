@@ -6,7 +6,20 @@ namespace RegularExpressions
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome To User Portal");
+            EntryValidation validation = new EntryValidation();
+            validation.ValidateFirstName();
+
+            validation.ValidateLastName();
+
+            validation.ValidateEmail();
+
+            validation.ValidatePhoneNumber();
+
+            validation.ValidatePassword();
+
+
+
         }
     }
 }
